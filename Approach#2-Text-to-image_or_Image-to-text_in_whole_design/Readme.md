@@ -46,16 +46,11 @@ Text placeholders extraction with SVG:
 
 ![截圖 2023-06-18 下午9.00.17.png](reports/figures/TextSegment_for_segment1.png)
 
-Try #2
-
-![Demo_for_segment2.png](reports/figures/Demo_for_segment2.jpg)
+| Try #2 | Try #3 |
+| --- | --- |
+| ![Demo_for_segment2.png](reports/figures/Demo_for_segment2.jpg) | ![Demo_for_segment3.png](reports/figures/Demo_for_segment3.jpg) |
 
 → Need the help of svg or UI segment
-
-Try #3
-
-![Demo_for_segment3.png](reports/figures/Demo_for_segment3.jpg)
-
 
 **Requirements**
     
