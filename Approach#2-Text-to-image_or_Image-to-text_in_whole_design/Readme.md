@@ -40,7 +40,7 @@ Top-down image segmentation by Meta-SAM [[Website](https://segment-anything.com/
 
 Try #1
     
-![Demo_for_segment1_groundingDino.png](reports/figures/Demo_for_segment1_groundingDino.png)
+![Demo_for_segment1_groundingDino.png](reports/figures/Demo_for_segment1_groundingDino.jpg)
 
 Text placeholders extraction with SVG:
 
@@ -48,13 +48,13 @@ Text placeholders extraction with SVG:
 
 Try #2
 
-![Demo_for_segment2.png](reports/figures/Demo_for_segment2.png)
+![Demo_for_segment2.png](reports/figures/Demo_for_segment2.jpg)
 
 → Need the help of svg or UI segment
 
 Try #3
 
-![Demo_for_segment3.png](reports/figures/Demo_for_segment3.png)
+![Demo_for_segment3.png](reports/figures/Demo_for_segment3.jpg)
 
 
 **Requirements**
@@ -72,6 +72,22 @@ Try #3
     - Style analysis model: 
         - vgg-19 [[PyTorch](https://pytorch.org/hub/pytorch_vision_vgg/)]
         - textual inversion [[Github](https://github.com/rinongal/textual_inversion)]
+
+    - Text-to-RasterImage generator:
+
+        - Latent Diffusion Model [[Paper](references/research_papers/LDM.pdf)] [[Github](https://github.com/CompVis/latent-diffusion)]
+
+        - Composable-Diffusion: support compositional text prompt [[Website](references/research_papers/Compositional-Visual-Generation-with-Composable-Diffusion-Models.pdf)] [[Github](https://github.com/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch)]
+
+        - ControlNet: adding more control by image/sketch [[Paper](references/research_papers/ControlNet.pdf)] [[Github](https://github.com/lllyasviel/ControlNet)] [[WebUI extension](https://github.com/Mikubill/sd-webui-controlnet)]
+
+        - GigaGAN [[Website](https://mingukkang.github.io/GigaGAN/)]
+
+        - Editing images:
+            - GroundingDINO: regional image editing [[Github](https://github.com/IDEA-Research/GroundingDINO/blob/main/demo/image_editing_with_groundingdino_gligen.ipynb)]
+            - Drag-your-GAN [[Website](https://vcai.mpi-inf.mpg.de/projects/DragGAN/)] [[Github](https://github.com/XingangPan/DragGAN)]
+            - Edit Everything [[paper](references/research_papers/EditEverything.pdf)] [[Github](https://github.com/DefengXie/Edit_Everything)]
+    
     - Image-to-text: GPT4
 - A python script for extracting text placeholders
 - Input: a design with selected images or texts
@@ -84,10 +100,7 @@ Try #3
 
 [Research] 
 
-- VectorFusion [[Paper](references/research_papers/VectorFusion.pdf)]: text-to-image-to-vector method
-- IconShop [[Paper](references/research_papers/IconShop.pdf)]: The key to the success of IconShop is to exploit the sequential nature of SVG. Design a transformer-based architecture to achieve text-to-SVG.
-    - with black-and-white icon dataset, [FIGR-8](https://github.com/marcdemers/FIGR-8)
-- Raster-to-Vector tool: open-source model Vtracer [[Github](https://github.com/visioncortex/vtracer)]
+List above in the requirements
 
 [Business solutions]
 <details>
@@ -116,30 +129,45 @@ Try #3
 </details>
 
 <details>
-<summary>iconomy.app</summary>
+<summary>flair.ai</summary>
 
-- Reference: [[Try the Demo](https://run.iconomy.app/)]
-- 👍 have web UI; the result is acceptable
+- Reference: [[Website](https://flair.ai/)] [[Demo](https://twitter.com/flairAI_)]
+- based on (a) product image and (b) text prompt, generate the final design
+ - **Learning**
+            
+    We could learn its UX design, providing `text chunk hint` and `template design along its text prompt` to assist users to input more specific text prompts and get results with expected performance
     
-    ![UI sample.png](reports/figures/UI_sample.png)
+    ![flair demo [eng].png](reports/figures/flair_demo_eng.png)
     
-- 👎 no API; only 5 trys for free
+- **Try some results**:
+    
+    Prompt: **"vitali on top of a natural hill, in front of mountains and cloudy skies in the background"**
+    
+    ![fSXxKAbHGUks3x24ramv.jpeg](reports/figures/fSXxKAbHGUks3x24ramv.jpeg)
+    
+    Prmpot: **"vitali emerging from ripples in a lake surrounded by plants and flowers, with sunlight streaming down"**
+    
+    ![IP4bRbZfwvnpBby0Iepv.jpeg](reports/figures/IP4bRbZfwvnpBby0Iepv.jpeg)
+    
+    The results considering contours and text prompt is not impressive:
+    
+    Prompt: **"vitali on hand with hot air balloon floating in the background, in front of mountains and cloudy skies in the background"**
+    
+    ![sketch to image.png](reports/figures/sketch_to_image.png)
 
 </details>
 
-- Adobe Vectorisation [[Website](https://www.adobe.com/express/feature/image/convert/svg)]
-
+- Microsoft Designer [[Website](https://designer.microsoft.com/)]
 
 
 ## Pros and Cons
 
 🟢 Pros
-
-- Could leverage foundation models to generate decent raster image (if we choose the solution of raster-to-svg)
-- Have two state-of-the-art research solutions with different generative architectures for guidance
-- Have sufficient dataset
+    
+- Could leverage foundation models to generate decent raster image
+- More research-active area
 
 🔴 Cons
 
-- No respective open-source Github repo available for checking the performance of the research paper
-- Generation quality has the risk of not meeting the designer's requirements since there is limited research on SVG generation
+- The open-source UI segment dataset is old, published in 2017, which might be out of date. We might need to collect and annotate a new one by ourselves
+- Generation quality has the risk of not meeting the designer's requirements
