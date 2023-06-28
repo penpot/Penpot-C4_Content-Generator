@@ -52,7 +52,7 @@ Text placeholders extraction with SVG:
 
 → Need the help of svg or UI segment
 
-**Requirements**
+## Requirements
     
 - ML model:
     - Raster image segmentation:
