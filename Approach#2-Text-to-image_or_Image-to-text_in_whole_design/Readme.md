@@ -34,7 +34,7 @@ Step #3) Based on input text prompts, the system will generate/control new conte
 </details>
 
 ## 🖼️ Experiment
-> Why do we need both top-down (UI-segment) and bottom-up (svg element)?
+> Experimenting for the reason that we need both top-down (UI-segment) and bottom-up (svg element)
 
 Top-down image segmentation by Meta-SAM [[Website](https://segment-anything.com/demo#)] [[Github](https://github.com/facebookresearch/segment-anything)]
 
