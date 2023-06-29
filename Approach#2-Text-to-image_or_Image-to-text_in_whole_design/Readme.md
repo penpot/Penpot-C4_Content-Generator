@@ -9,7 +9,7 @@ The system will help users to generate raster images to fulfill the design based
 
 ## Technology Pipeline
 
-Step #1) Leverage `top-down` ([UI segment](https://dl.acm.org/doi/pdf/10.1145/3411764.3445186)) and `bottom-up` (SVG segment) solutions to separate image/text placeholders.
+Step #1) Leverage `top-down` ([UI segment](https://dl.acm.org/doi/pdf/10.1145/3411764.3445186)) and `bottom-up` ([SVG segment](https://github.com/penpot/Penpot-C3_Design-System-Advisor/blob/main/Approach%231-Identifying_unused_components/sample.py)) solutions to separate image/text placeholders.
 
 Step #2) Using open-source model, vgg-19 [[PyTorch](https://pytorch.org/hub/pytorch_vision_vgg/)], textual inversion [[Github](https://github.com/rinongal/textual_inversion)] or style transfer-related methods, to analyze the style of selected components. (mimic the selection within [Recraft.ai](http://recraft.ai/))
     
