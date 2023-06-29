@@ -4,6 +4,7 @@
 |---------------------------------------------------------------|
 | 💡 Please feel free to share your valuable comments [here](https://github.com/penpot/Penpot-C4_Content-Generator/issues/1#issue-1780336332).|
 
+<br>
 
 ## 🔎 Idea overview
 
