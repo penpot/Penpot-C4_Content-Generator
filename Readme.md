@@ -12,11 +12,11 @@ As a technologist, I want to generate a set of coherent raster images and texts 
 <br>
 
 ## 💡 Feature analysis
-### Approach #1 | Text-to-Text [[More](Approach\%231-Text-to-Text/Readme.md)]
+### Approach #1 | Text-to-Text [[More](Approach\%231-Text-to-Text/)]
 
 The system will help users to generate text for one or multiple placeholders depending on the element context. 
 
-### Approach #2 | Text-to-image or Image-to-text in whole design [[More](Approach\%232-Text-to-image_or_Image-to-text_in_whole_design/Readme.md)]
+### Approach #2 | Text-to-image or Image-to-text in whole design [[More](Approach\%232-Text-to-image_or_Image-to-text_in_whole_design/)]
     
 The system will help users to generate raster images to fulfill the design based on the existing text in the design. The text/image could be mutually replaced.
 
