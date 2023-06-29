@@ -22,7 +22,7 @@ Step #3) Based on input text prompts, the system will generate/control new conte
 
 - Composable-Diffusion: support compositional text prompt [[Github](https://github.com/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch)]
 
-- ControlNet: adding more control by image/sketch [[Paper](references/research_papers/ControlNet.pdf)] [[Github](https://github.com/lllyasviel/ControlNet)] [[WebUI extension](https://github.com/Mikubill/sd-webui-controlnet)]
+- ControlNet: adding more control by image/sketch [[Paper](references/research_papers/controlNet.pdf)] [[Github](https://github.com/lllyasviel/ControlNet)] [[WebUI extension](https://github.com/Mikubill/sd-webui-controlnet)]
 
 - GigaGAN [[Website](https://mingukkang.github.io/GigaGAN/)]
 
