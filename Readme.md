@@ -1,8 +1,9 @@
 # Idea #4 | Content Generator
 
-| 🚀 Help the community improve the Penpot challenge! 🚀    | 
-|---------------------------------------------------------------|
-| 💡 Please feel free to share your valuable comments [here](https://github.com/penpot/Penpot-C4_Content-Generator/issues/1#issue-1780336332).|
+### 🚀 Calling all innovators!  🚀 
+
+💡 We're looking for your creative genius to level up the Penpot challenge.     
+Share your groundbreaking ideas and let's redefine what's possible [here](https://github.com/penpot/Penpot-C4_Content-Generator/issues/1#issue-1780336332) ! 🔥
 
 <br>
 
