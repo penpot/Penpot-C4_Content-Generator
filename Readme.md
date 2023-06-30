@@ -1,4 +1,4 @@
-# Idea #4 | Content Generator
+# Challenge #4 | Content Generator
 
 ### 🚀 Calling all innovators!  🚀 
 
@@ -7,7 +7,7 @@ Share your groundbreaking ideas and let's redefine what's possible [here](https:
 
 <br>
 
-## 🔎 Idea overview
+## 🔎 Overview
 
 As a technologist, I want to generate a set of coherent raster images and texts that can fill in selected placeholders in a Penpot Board structure found in a Penpot serialized output so I can speed up a mockup process
 
