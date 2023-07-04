@@ -4,7 +4,7 @@ The system will help users to generate raster images to fulfill the design based
 
 | Technology readiness | Risks | Complexity |
 | ----- | ----- | ---------- |
-| <div style="width: 200pt"> 🟡 Some elements are available but require adaptation | <div style="width: 150pt"> 🟡 Moderate risk | <div style="width: 130pt"> 🟠 Moderately complex |
+| <div style="width: 200pt"> 🟡 Some elements are available but require adaptation | <div style="width: 150pt"> 🟡 Moderate risk | <div style="width: 130pt"> 🟡 Moderately complex |
 
 
 ## Technology Pipeline
